@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+
+        android:layout_above="@+id/b"
+
+
+        android:src="@drawable/udacity"
+        tools:layout_height="wrap_content"></ImageView>
+<TextView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#00ff51"
+    android:layout_below="@id/iv1"/>
+    <TextView
+        android:id="@+id/b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/a"
+        android:layout_alignStart="@+id/a"
+        android:layout_centerVertical="true"
+        android:paddingBottom="16dp"
+        android:text="Udacity"
+        android:textColor="#514367"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+    <TextView android:text="www.udacity.com"
+        android:id="@+id/w"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F9572F"
+        android:textStyle="bold"
+        android:layout_below="@id/b"
+        android:textSize="25sp"
+        android:layout_marginLeft="26dp"
+        android:paddingBottom="16dp"
+        android:autoLink="web"/>
+
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/d"
+        android:layout_alignStart="@+id/d"
+        android:layout_below="@+id/w"
+        android:paddingBottom="16dp"
+        android:text="2465 Latham St"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:autoLink="map"/>
+    <TextView android:text="Mountain View, CA 94043"
+        android:id="@+id/d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/a"
+        android:textSize="25sp"
+        android:layout_marginLeft="26dp"
+        android:paddingBottom="16dp"
+        android:autoLink="map"/>
+    <TextView android:text="650-555-5555"
+        android:id="@+id/e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="26dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/d"
+        android:paddingBottom="16dp"
+        android:autoLink="phone"
+        />
+
+
+
+
+
+</RelativeLayout>
